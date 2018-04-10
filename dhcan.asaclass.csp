@@ -1,0 +1,30 @@
+<html>
+<head>
+<!-- Put your page Title here -->
+<title>ASA分级</title>
+<csp:content charset="UTF-8">
+<dhcclinic:head></dhcclinic:head>
+<HISUI/>
+</head>
+<body>
+	<div id="dataTools" style="padding-top:10px">
+		<form id="dataForm" method="post">
+			<label for="Code">代码</label>
+			<input type="text" id="Code" name="Code" class="easyui-textbox textbox" 
+				data-options="required:true,validType:{length:[0,20]}"/>
+			<label for="Description">名称</label>
+			<input type="text" id="Description" name="Description" class="easyui-textbox textbox" 
+				data-options="required:true,validType:{length:[0,20]}"/>
+			<input type="hidden" id="RowId" name="RowId" />
+			<a href="#" id="btnAdd" class="hisui-linkbutton" data-options="iconCls:'icon-add'">新增</a>
+			<a href="#" id="btnEdit" class="hisui-linkbutton" data-options="iconCls:'icon-edit'">修改</a>
+			<a href="#" id="btnDel" class="hisui-linkbutton" data-options="iconCls:'icon-remove'">删除</a>
+		</form>
+	</div>
+	<table id="dataBox">
+	</table>
+	<script type="text/javascript" src="../service/dhcanop/js/dhccl.framework.js"></script>
+	<script type="text/javascript" src="../service/dhcanop/js/dhccl.dataform.js"></script>
+	<script type="text/javascript" src="../service/dhcanop/js/dhcan.asaclass.js"></script>
+</body>
+</html>
