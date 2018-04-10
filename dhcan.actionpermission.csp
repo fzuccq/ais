@@ -1,0 +1,28 @@
+<html>
+<head>
+<!-- Put your page Title here -->
+<title>功能授权</title>
+<CSP:CONTENT CHARSET="UTF-8">
+<dhcclinic:head></dhcclinic:head>
+<HISUI/>
+</head>
+<body class="hisui-layout">
+	<div data-options="region:'west'" style="width:320px;">
+		<table id="groupBox"></table>
+		<div id="groupTool" style="padding:10px;">
+			描述：<input id="filterGroup" class="easyui-textbox textbox" name="filterGroup">
+			<a id="btnGroupQuery" href="#" class="hisui-linkbutton" data-options="iconCls:'icon-search'"></a>
+		</div>
+	</div>
+	<div data-options="region:'center',title:'操作功能',headerCls:'panel-header-gray'">
+		<table id="actionBox"></table>
+		<div id="actionTool" style="padding:5px;">
+			<a id="btnSave" href="#" class="hisui-linkbutton" data-options="iconCls:'icon-save',plain:true">保存</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="../service/dhcanop/js/dhccl.framework.js"></script>
+	<script type="text/javascript" src="../service/dhcanop/js/datagrid-groupview.js"></script>
+	<script type="text/javascript" src="../service/dhcanop/js/datagrid-cellediting.js"></script>
+	<script type="text/javascript" src="../service/dhcanop/js/dhcan.actionpermission.js"></script>
+</body>
+</html>
